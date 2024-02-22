@@ -37,8 +37,8 @@ export default function Question(props) {
           type="text"
           name=""
           id=""
-          placeholder="Enter your prompt here"
-          className="text-center lora-regular rounded-md w-2/6 p-2 my-8"
+          placeholder="Enter your answer"
+          className="text-center text-black lora-regular rounded-md w-2/6 p-2 my-8"
         />
         <button
           className="border-2 border-white rounded-md bg-inherit py-2 px-4 mt-8 mb-4 mx-4 text-xl"
