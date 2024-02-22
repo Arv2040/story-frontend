@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-export default function Question() {
+export default function Question(props) {
     const questionarray = [
         "what is your genre",
         "what is the tone of the story",
@@ -17,9 +17,12 @@ export default function Question() {
         setQuestion(questionarray[index]);
         setIndex(index+1);
         setButton("NEXT");
+        
         if(index>(questionarray.length-1)){
             setQuestion('done');
             setButton(" ");
+            {props.setChange(true)}
+
         }
     }
     const[question,setQuestion] = useState(" ");
