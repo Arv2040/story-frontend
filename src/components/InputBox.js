@@ -6,8 +6,8 @@ export default function InputBox() {
       type="text"
       name=""
       id=""
-      placeholder="This is where you enter your prompt"
-      className="text-center rounded-md w-256 p-2"
+      placeholder="Enter your prompt here"
+      className="text-center lora-regular rounded-md w-5/6 p-2 absolute bottom-4 left-[50%] translate-x-[-50%]"
     />
   );
 }

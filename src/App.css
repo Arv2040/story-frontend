@@ -37,15 +37,6 @@
   }
 }
 
-.noto-serif-thin {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
 .hide-scroll::-webkit-scrollbar {
   display: none;
 }
@@ -161,4 +152,11 @@
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: italic;
+}
+
+.lora-regular {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
