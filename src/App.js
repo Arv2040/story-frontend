@@ -4,6 +4,7 @@ import "tailwindcss/tailwind.css";
 import Prompt from "./components/Prompt";
 import Options from "./components/Options";
 import Question from "./components/Question";
+import InputBox from "./components/InputBox";
 
 function App() {
   const[change,setChange] = useState(false)
@@ -17,13 +18,7 @@ function App() {
         {(change === false)?( <Question change = {change} setChange= {setChange}/>):(<Options/>)}
 
         <div className="">
-          <input
-            type="text"
-            name=""
-            id=""
-            placeholder="Enter your prompt here"
-            className="text-center rounded-md w-96 p-2 absolute bottom-4 left-[50%] translate-x-[-50%]"
-          />
+          <InputBox />
         </div>
       </section>
     </main>
