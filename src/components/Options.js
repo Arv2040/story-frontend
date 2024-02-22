@@ -4,7 +4,7 @@ import Button from "./Button";
 export default function Options() {
   return (
     <>
-      <div className="text-white w-full place-items-center mt-8 grid grid-cols-2 gap-x-32 gap-y-4">
+      <div className="text-white w-5/6 mt-8 grid grid-cols-4 gap-x-8 gap-y-4 m-auto">
         <Button />
         <Button />
         <Button />

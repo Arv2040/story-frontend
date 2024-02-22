@@ -37,8 +37,8 @@ export default function Question(props) {
   }
 
   return (
-    <main className="mt-6 w-5/6 rounded-md m-auto h-64 text-emerald-200 text-center text-xl">
-      <div className="w-full mt-16">{question}</div>
+    <main className="mt-6 w-5/6 rounded-md m-auto h-64 text-emerald-200 text-center text-xl merriweather-regular">
+      <div className="w-full mt-16 text-3xl">{question}</div>
       <div className="w-full">
         <input
           type="text"
