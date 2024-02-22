@@ -13,7 +13,7 @@ function App() {
       
       <Prompt/>
       {/* <Options/> */}
-      {/* <Question/> */}
+      <Question/>
       
       
       <div className="">
