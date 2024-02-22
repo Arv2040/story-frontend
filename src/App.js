@@ -3,8 +3,9 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import "./App.css";
 import "tailwindcss/tailwind.css";
 import Question from "./components/Question";
-import Content from "./components/Content";
 import Options from "./components/Options";
+import InputBox from "./components/InputBox";
+import Prompt from "./components/Prompt";
 
 function App() {
   const [change, setChange] = useState(false);
@@ -22,7 +23,12 @@ function App() {
         {change === false ? (
           <Question change={change} setChange={setChange} />
         ) : (
-          <Content />
+          <>
+            <Prompt />
+            <div className="">
+              <Options />
+            </div>
+          </>
         )}
       </section>
     </main>

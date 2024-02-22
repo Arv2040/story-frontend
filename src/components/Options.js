@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import InputBox from "./InputBox";
 
 export default function Options() {
   return (
@@ -10,6 +11,7 @@ export default function Options() {
         <Button />
         <Button />
       </div>
+      <InputBox />
     </>
   );
 }
