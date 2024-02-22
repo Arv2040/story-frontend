@@ -9,7 +9,7 @@ export default function AnswerBox(props) {
       type="text"
       name=""
       id=""
-      placeholder="Enter a custom prompt instead."
+      placeholder="Enter Answer"
       className={`text-center text-black rounded-md w-2/6 p-2 my-8`}
       value = {props.text}
       onChange = {handleInputChange}
