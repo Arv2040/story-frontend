@@ -48,7 +48,7 @@ export default function Question(props) {
     <main className="mt-6 w-5/6 rounded-md m-auto h-64 text-emerald-200 text-center text-xl merriweather-regular">
       <div className="w-full mt-16 text-3xl">{question}</div>
       <div className="w-full">
-        <AnswerBox customStyles={`${inputVisible ? "" : "hidden"}`} />
+        <AnswerBox text= {props.text} setText= {props.setText} customStyles={`${inputVisible ? "" : "hidden"}`} />
 
         {/* <CenteredImage
           imageUrl="https://rocketexpansion.com/wp-content/uploads/2021/04/about-the-author-v2.jpg"
