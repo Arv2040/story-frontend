@@ -2,6 +2,7 @@ import './App.css';
 import 'tailwindcss/tailwind.css';
 import Prompt from './components/Prompt';
 import Options from './components/Options';
+import Question from './components/Question';
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       <h1 className="text-white  w-fit text-5xl font-sans font-bold ">Story.ai</h1>
       
       <Prompt/>
-      <Options/>
+      {/* <Options/> */}
+      {/* <Question/> */}
       
       
       <div className="">
