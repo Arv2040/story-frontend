@@ -6,6 +6,8 @@ export default function Question(props) {
   const [index, setIndex] = useState(0);
   const [button, setButton] = useState("Start");
   const [inputVisible, setInputVisible] = useState(false); // Track input visibility
+  
+  
 
   const questionarray = [
     "What is your genre?",
@@ -26,6 +28,10 @@ export default function Question(props) {
     setQuestion(questionarray[index]);
     setIndex(index + 1);
     setButton("Next");
+    props.setText("");
+   
+    
+    
 
     if (index > questionarray.length - 1) {
       setQuestion("Done");
@@ -34,6 +40,7 @@ export default function Question(props) {
         props.setChange(true);
       }
     }
+   
   }
 
   return (

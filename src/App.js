@@ -7,6 +7,8 @@ import Options from "./components/Options";
 
 function App() {
   const [change, setChange] = useState(false);
+  const[text,setText] = useState("");
+ 
   return (
     <main className="h-screen bg-black py-8">
       <section className="flex flex-col justify-evenly items-center">
@@ -17,9 +19,9 @@ function App() {
         {/* <Content /> */}
 
         {change === false ? (
-          <Question change={change} setChange={setChange} />
+          <Question  text= {text} setText= {setText} change={change} setChange={setChange} />
         ) : (
-          <Content />
+          <Content text = {text} setText = {setText}/>
         )}
       </section>
     </main>
