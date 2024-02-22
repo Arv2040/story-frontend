@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import 'tailwindcss/tailwind.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className ="h-screen bg-black">
+      <h1 className="text-white m-auto w-fit text-5xl font-serif ">Story.ai</h1>
+      <div className="prompt absolute bottom-5 left-[50%] translate-x-[-50%]">
+        <input type="text" name="" id="" placeholder = "Enter your prompt here" className = "text-center rounded-md w-96 p-2"/>
+      </div>
+    
+    </main>
   );
 }
 
