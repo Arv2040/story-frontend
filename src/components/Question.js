@@ -30,13 +30,18 @@ export default function Question(props) {
   const [button, setButton] = useState("START");
 
   return (
-    <main className="mt-6 w-5/6 rounded-md m-auto h-64 text-white lora-regular">
-      <div className="w-full text-center text-white lora-regular-big">
-        {question}
-      </div>
-      <div className="w-full text-center text-white lora-regular-big">
+    <main className="mt-6 w-5/6 rounded-md m-auto h-64 text-white text-2xl">
+      <div className="w-full text-center text-white mt-16">{question}</div>
+      <div className="w-full text-center text-white">
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Enter your prompt here"
+          className="text-center lora-regular rounded-md w-2/6 p-2 my-8"
+        />
         <button
-          className="border-2 border-white bg-inherit py-2 px-4 mt-8 mb-4"
+          className="border-2 border-white rounded-md bg-inherit py-2 px-4 mt-8 mb-4 mx-4 text-xl"
           onClick={handleQuestionSubmit}
         >
           {button}
