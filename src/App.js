@@ -10,7 +10,7 @@ function App() {
   return (
     <main className="h-screen bg-black py-8">
       <section className="flex flex-col justify-evenly items-center">
-        <h1 className="text-white w-fit text-5xl poppins-thin">Story.ai</h1>
+        <h1 className="text-white w-fit text-5xl poppins-thin">Oohbaby.ai</h1>
 
         {/* <Content /> */}
 
