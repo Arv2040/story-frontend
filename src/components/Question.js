@@ -34,12 +34,14 @@ export default function Question(props) {
       <div className="w-full text-center text-white lora-regular-big">
         {question}
       </div>
-      <button
-        className="border-2 border-white bg-inherit py-2 px-4 mt-8 mb-4"
-        onClick={handleQuestionSubmit}
-      >
-        {button}
-      </button>
+      <div className="w-full text-center text-white lora-regular-big">
+        <button
+          className="border-2 border-white bg-inherit py-2 px-4 mt-8 mb-4"
+          onClick={handleQuestionSubmit}
+        >
+          {button}
+        </button>
+      </div>
     </main>
   );
 }
